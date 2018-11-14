@@ -1,0 +1,134 @@
+<!-- 页面 -->
+<ion-header text-center no-border>
+  <ion-navbar color="yel">
+    <ion-title>
+      <span >桔家</span>
+      <!-- <ion-img width="80" height="80" src="../assets/imgs/jijia.png"></ion-img> -->
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+ 
+ <ion-content padding>  <!--页面 -->
+
+  <!-- 滚动 不需要整页滚动条的地方使用 -->
+  <ul class="navlist">
+    <li *ngFor = "let item of arr;let idx = index;" (click)="isClick(idx)" [class.first]="isActive==idx" >推荐</li>
+  </ul>
+
+ <div [ngSwitch] = "isActive">
+    <!-- 推荐页面 -->
+   <div *ngSwitchCase="0">
+    <div class="sil">
+      <ion-slides pager=ture autoplay="2000" loop="true">
+        <ion-slide>
+          <img src="../assets/imgs/首页/轮播1.png">
+        </ion-slide>
+        <ion-slide>
+          <img src="../assets/imgs/首页/轮播1.png">
+        </ion-slide>
+        <ion-slide>
+          <img src="../assets/imgs/首页/轮播1.png">
+        </ion-slide>
+      </ion-slides>
+    </div>
+    <ion-grid class="goods">
+      <ion-row>
+        <ion-col >
+          <img src="../assets/imgs/首页/col_01.png">
+          <p>——北欧原木色置物架——</p>
+        </ion-col>
+        <ion-col >
+          <img src="../assets/imgs/首页/col_02.png">
+          <p>——简约黑檀木茶几——</p>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col >
+            <img src="../assets/imgs/首页/col_03.png">
+            <p>——北欧白橡木书架——</p>
+          </ion-col>
+          <ion-col >
+            <img src="../assets/imgs/首页/col_04.png">
+            <p>——北欧风餐边柜——</p>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col >
+            <img src="../assets/imgs/首页/col_05.png">
+            <p>——北欧风餐边柜——</p>
+          </ion-col>
+          <ion-col >
+            <img src="../assets/imgs/首页/col_06.png">
+            <p>——北欧风餐边柜——</p>
+            </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!-- 家居页面 -->
+   </div>
+   <div *ngSwitchCase="1">
+      <ion-slides pager="true" autoplay="1000" loop="true" class="sli">
+          <ion-slide>
+            <img src="../../assets/imgs/家居/轮播.png" alt="banner">
+          </ion-slide>
+          <ion-slide>
+            <img src="../../assets/imgs/家居/轮播.png" alt="banner">
+          </ion-slide>
+          <ion-slide>
+            <img src="../../assets/imgs/家居/轮播.png" alt="banner">
+          </ion-slide>
+      </ion-slides>
+
+      <ion-grid class="rooms">
+          <ion-row>
+            <ion-col >
+              <img src="../assets/imgs/家居/1.png">
+              <p>客厅</p>
+            </ion-col>
+            <ion-col >
+              <img src="../assets/imgs/家居/2.png">
+              <p>书房</p>
+            </ion-col>
+            <ion-col >
+              <img src="../assets/imgs/家居/3.png">
+              <p>门厅</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <img src="../assets/imgs/家居/家居.png">
+
+        <div class="goods2">
+        <ion-grid class="content">
+            <ion-row>
+              <ion-col >
+                <img src="../assets/imgs/家居/4.png">
+                <p><span>-</span>&nbsp;欧式全实木花几&nbsp;<span>-</span>&nbsp;&nbsp;&nbsp;<span>RMB 600</span></p>
+              </ion-col>
+              <ion-col >
+                <img src="../assets/imgs/家居/5.png">
+                <p><span>-</span>&nbsp;线代简约早餐桌&nbsp;<span>-</span>&nbsp;&nbsp;&nbsp;<span>RMB 450</span></p>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col >
+                  <img src="../assets/imgs/家居/6.png">
+                  <p><span>-</span>&nbsp;欧式简约书桌&nbsp;<span>-</span>&nbsp;&nbsp;&nbsp;<span>RMB 500</span></p>
+                </ion-col>
+                <ion-col >
+                  <img src="../assets/imgs/家居/7.png">
+                  <p><span>-</span>&nbsp;纯红实木餐桌&nbsp;<span>-</span>&nbsp;&nbsp;&nbsp;<span>RMB 700</span></p>
+                  </ion-col>
+              </ion-row>
+        </ion-grid>
+      </div>
+
+   </div>
+</div>
+
+</ion-content>

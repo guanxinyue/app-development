@@ -1,0 +1,100 @@
+page-home {
+    ion-navbar{
+        padding-bottom:0px; 
+        height:50px;
+        span{
+        font-family: '幼圆';
+        }
+    }
+    .navlist {
+        padding-left: 0px!important;  //设不了加!im 提高权重
+        margin: 0px;
+        height:45px;
+        line-height: 45px;
+        .first{
+            border-bottom:4px solid #ffdb2c;
+        }
+        li{
+            width: 25%;
+            float: left;
+            text-align: center;
+        }
+        .sil{
+            height:auto;
+            padding: 0px!important;
+            margin: 0px!important;
+            img{
+                width:100%;
+            }
+        }
+    }
+        .goods{
+            padding-left: 0px!important;  //设不了加!im 提高权重
+            margin: 0px;
+            img{
+                width: 100%;
+            }
+            ion-col{
+                position:relative;
+                p{
+                    position: absolute;
+                    width: 158px;
+                    bottom:-5px;//定在图片的下面
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 12px;
+                    text-align: center;
+                    background-color: rgba(0,0,0,0.5);
+                    color: rgba(255,255,255,0.8);
+                }
+            }
+        }
+        .rooms{
+           
+            ion-col{ 
+                position: relative;
+                p{ 
+                    background-color: rgba(0,0,0,0.4);
+                    position: absolute;
+                    color:  rgb(255,255,255);
+                    height: 100px;
+                    width: 100px;
+                    text-align:center;
+                    line-height: 100px;
+                    font-size: 20px;
+                    font-weight:blod;
+                    bottom: -10px;
+                }
+            }
+        }
+        .goods2{
+            padding-left: 0px!important;  //设不了加!im 提高权重
+            margin: 0px;
+            img{
+                width: 100%;
+            }
+            ion-col{
+                position:relative;
+                p{
+                    position: absolute;
+                    width: 156px;
+                    bottom:-5px;//定在图片的下面
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 12px;
+                    font-weight: bold;
+                    text-align: center;
+                    background-color: rgba(0,0,0,0.5);
+                    color: rgb(255,255,255);
+                }
+                span{
+                    font-weight: 300;
+                    font-size: 12px;
+                }
+            }
+        }
+        
+
+}
+//letter-spacing: 5px;//单词之间的距离 折半
+//给商城页顶部图片添加display:block
