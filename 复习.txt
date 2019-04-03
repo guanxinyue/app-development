@@ -1,0 +1,39 @@
+构造函数、原型
+数据类型
+Object.keys()
+ DOM节点操作、属性
+页面优化、页面回流、页面重绘
+文档碎片
+正则
+解构
+数组、字符串的方法
+
+浮动原理
+定位原理
+bfc ifc
+边距重合
+高度塌陷
+
+类和构造函数的属性调用方法 都得用this访问
+
+模块
+组件
+服务
+依赖注入
+在ts中声明类  要给他实例化 new
+
+
+
+
+板绘
+手绘
+hbuider
+
+vscode  
+angular
+nodejs
+xshell
+nodejs vm
+ea
+markdown
+
